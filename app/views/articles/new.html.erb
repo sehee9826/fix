@@ -11,20 +11,22 @@
         <center><%= image_tag 'mails.jpg' %></center>
         
         <h1 style = "color:white">메일 작성</h1>
-        <%= form_for :article, url: '/articles/' do |f| %>
+        <%= form_for :article, url: articles_path do |f| %>
         <p>
             <%= f.label :title%><br>
             <%= f.text_field :title %>
         </p>
-        <p>
-            <%= f.label :send%><br>
-            <%= f.text_field :send %>
-        </p>
+      
 
         <p>
-            <%= f.label :content%><br>
-            <%= f.text_field :content %>
+            <%= f.label :asdf%><br>
+            <%= f.text_field :asdf %>
         </p>
+        
+          <p>
+            <%= f.label :send%><br>
+            <%= f.text_field :send %>
+    </p>
     
         <p>
             <%= f.submit %>
